@@ -35,6 +35,7 @@
 // Properties
 @property (nonatomic) BOOL displayActionButton;
 @property (nonatomic, readonly) NSUInteger currentIndex;
+@property (nonatomic) BOOL displayNavigationArrows;
 
 // Init
 - (id)initWithPhotos:(NSArray *)photosArray  __attribute__((deprecated)); // Depreciated
