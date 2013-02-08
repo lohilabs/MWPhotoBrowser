@@ -8,10 +8,13 @@
 
 #import "MWPhoto.h"
 #import "MWPhotoBrowser.h"
+#import "SDWebImageOperation.h"
 
 // Private
 @interface MWPhoto () {
-
+    
+    id<SDWebImageOperation> imageDownload;
+    
     // Image Sources
     NSString *_photoPath;
     NSURL *_photoURL;
@@ -81,7 +84,7 @@
 }
 
 - (void)dealloc {
-    [[SDWebImageManager sharedManager] cancelAll];
+    [imageDownload cancel];
 }
 
 #pragma mark MWPhoto Protocol Methods
@@ -102,9 +105,9 @@
             [self performSelectorInBackground:@selector(loadImageFromFileAsync) withObject:nil];
         } else if (_photoURL) {
             // Load async from web (using SDWebImage)
-            [[SDWebImageManager sharedManager] downloadWithURL:_photoURL options:0 progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished){
+            imageDownload = [[SDWebImageManager sharedManager] downloadWithURL:_photoURL options:0 progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished){
                 
-                if(image && !error && finished){
+                if(image){
                     self.underlyingImage = image;
                     [self imageDidFinishLoadingSoDecompress];
                 } else {
@@ -125,7 +128,7 @@
 // Release if we can get it again from path or url
 - (void)unloadUnderlyingImage {
     _loadingInProgress = NO;
-    [[SDWebImageManager sharedManager] cancelAll];
+    [imageDownload cancel];
 	if (self.underlyingImage && (_photoPath || _photoURL)) {
 		self.underlyingImage = nil;
 	}
