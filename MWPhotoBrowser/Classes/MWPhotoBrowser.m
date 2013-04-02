@@ -969,7 +969,11 @@ navigationBarBackgroundImageLandscapePhone = _navigationBarBackgroundImageLandsc
 
 - (BOOL)areControlsHidden { return (_toolbar.alpha == 0); /* [UIApplication sharedApplication].isStatusBarHidden; */ }
 - (void)hideControls { [self setControlsHidden:YES animated:YES permanent:NO]; }
-- (void)toggleControls { [self setControlsHidden:![self areControlsHidden] animated:YES permanent:NO]; }
+- (void)toggleControls {
+//    [self setControlsHidden:![self areControlsHidden] animated:YES permanent:NO];
+    [self dismissModalViewControllerAnimated:YES];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationSlide];
+}
 
 #pragma mark - Properties
 
