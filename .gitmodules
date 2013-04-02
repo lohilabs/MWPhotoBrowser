@@ -1,0 +1,3 @@
+[submodule "MWPhotoBrowser/Libraries/MBProgressHUD"]
+	path = MWPhotoBrowser/Libraries/MBProgressHUD
+	url = https://github.com/jdg/MBProgressHUD.git

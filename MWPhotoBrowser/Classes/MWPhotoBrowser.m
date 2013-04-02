@@ -7,9 +7,9 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
+#import <MBProgressHUD/MBProgressHUD.h>
 #import "MWPhotoBrowser.h"
 #import "MWZoomingScrollView.h"
-#import "MBProgressHUD.h"
 #import "SDImageCache.h"
 
 #define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)

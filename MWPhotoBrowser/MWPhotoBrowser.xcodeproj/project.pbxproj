@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0EA380331573EA4B003F4582 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA380321573EA4B003F4582 /* ImageIO.framework */; };
+		4A4F3EC3170AA87F00693034 /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A4F3EC2170AA85700693034 /* libMBProgressHUD.a */; };
 		4C6F96C814AF704100F8389A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C6F96C714AF704100F8389A /* Foundation.framework */; };
 		4C6F96E214AF70BD00F8389A /* MWCaptionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6F96D614AF70BD00F8389A /* MWCaptionView.h */; };
 		4C6F96E314AF70BD00F8389A /* MWCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F96D714AF70BD00F8389A /* MWCaptionView.m */; };
@@ -21,8 +22,6 @@
 		4C6F96EB14AF70BD00F8389A /* MWTapDetectingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F96DF14AF70BD00F8389A /* MWTapDetectingView.m */; };
 		4C6F96EC14AF70BD00F8389A /* MWZoomingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6F96E014AF70BD00F8389A /* MWZoomingScrollView.h */; };
 		4C6F96ED14AF70BD00F8389A /* MWZoomingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F96E114AF70BD00F8389A /* MWZoomingScrollView.m */; };
-		4C6F96F614AF710800F8389A /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6F96F414AF710800F8389A /* MBProgressHUD.h */; };
-		4C6F96F714AF710800F8389A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F96F514AF710800F8389A /* MBProgressHUD.m */; };
 		4C6F970A14AF711300F8389A /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6F96F814AF711300F8389A /* SDImageCache.h */; };
 		4C6F970B14AF711300F8389A /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F96F914AF711300F8389A /* SDImageCache.m */; };
 		4C6F970C14AF711300F8389A /* SDImageCacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C6F96FA14AF711300F8389A /* SDImageCacheDelegate.h */; };
@@ -45,8 +44,19 @@
 		4CB08BA314B1F38700730E9F /* MWPhotoProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CB08BA214B1F38700730E9F /* MWPhotoProtocol.h */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4A4F3EC1170AA85700693034 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A4F3EBD170AA85700693034 /* MBProgressHUD.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D286A7491518C70F00E13FB8;
+			remoteInfo = MBProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0EA380321573EA4B003F4582 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		4A4F3EBD170AA85700693034 /* MBProgressHUD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MBProgressHUD.xcodeproj; path = Libraries/MBProgressHUD/MBProgressHUD.xcodeproj; sourceTree = "<group>"; };
 		4C6F96C414AF704100F8389A /* libMWPhotoBrowser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMWPhotoBrowser.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6F96C714AF704100F8389A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C6F96CB14AF704100F8389A /* MWPhotoBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MWPhotoBrowser-Prefix.pch"; sourceTree = SOURCE_ROOT; };
@@ -63,8 +73,6 @@
 		4C6F96E014AF70BD00F8389A /* MWZoomingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MWZoomingScrollView.h; path = Classes/MWZoomingScrollView.h; sourceTree = SOURCE_ROOT; };
 		4C6F96E114AF70BD00F8389A /* MWZoomingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MWZoomingScrollView.m; path = Classes/MWZoomingScrollView.m; sourceTree = SOURCE_ROOT; };
 		4C6F96EF14AF70DC00F8389A /* MWPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MWPhotoBrowser.bundle; sourceTree = SOURCE_ROOT; };
-		4C6F96F414AF710800F8389A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = Libraries/MBProgressHUD/MBProgressHUD.h; sourceTree = SOURCE_ROOT; };
-		4C6F96F514AF710800F8389A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = Libraries/MBProgressHUD/MBProgressHUD.m; sourceTree = SOURCE_ROOT; };
 		4C6F96F814AF711300F8389A /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = Libraries/SDWebImage/SDImageCache.h; sourceTree = SOURCE_ROOT; };
 		4C6F96F914AF711300F8389A /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = Libraries/SDWebImage/SDImageCache.m; sourceTree = SOURCE_ROOT; };
 		4C6F96FA14AF711300F8389A /* SDImageCacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDImageCacheDelegate.h; path = Libraries/SDWebImage/SDImageCacheDelegate.h; sourceTree = SOURCE_ROOT; };
@@ -92,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A4F3EC3170AA87F00693034 /* libMBProgressHUD.a in Frameworks */,
 				0EA380331573EA4B003F4582 /* ImageIO.framework in Frameworks */,
 				4C6F97C714AF74E200F8389A /* MessageUI.framework in Frameworks */,
 				4C6F96C814AF704100F8389A /* Foundation.framework in Frameworks */,
@@ -101,9 +110,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A4F3EBE170AA85700693034 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A4F3EC2170AA85700693034 /* libMBProgressHUD.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		4C6F96B914AF704100F8389A = {
 			isa = PBXGroup;
 			children = (
+				4A4F3EBD170AA85700693034 /* MBProgressHUD.xcodeproj */,
 				4C6F96C914AF704100F8389A /* MWPhotoBrowser */,
 				4C6F97E114AF7CCE00F8389A /* Supporting Files */,
 				4C6F96C614AF704100F8389A /* Frameworks */,
@@ -162,7 +180,6 @@
 		4C6F96F014AF70E800F8389A /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				4C6F96F214AF70FA00F8389A /* MBProgressHUD (3d5c3cc) */,
 				4C6F96F114AF70F500F8389A /* SDWebImage (b357e82) */,
 			);
 			name = Libraries;
@@ -193,15 +210,6 @@
 			name = "SDWebImage (b357e82)";
 			sourceTree = "<group>";
 		};
-		4C6F96F214AF70FA00F8389A /* MBProgressHUD (3d5c3cc) */ = {
-			isa = PBXGroup;
-			children = (
-				4C6F96F414AF710800F8389A /* MBProgressHUD.h */,
-				4C6F96F514AF710800F8389A /* MBProgressHUD.m */,
-			);
-			name = "MBProgressHUD (3d5c3cc)";
-			sourceTree = "<group>";
-		};
 		4C6F97E114AF7CCE00F8389A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,7 +232,6 @@
 				4C6F96E814AF70BD00F8389A /* MWTapDetectingImageView.h in Headers */,
 				4C6F96EA14AF70BD00F8389A /* MWTapDetectingView.h in Headers */,
 				4C6F96EC14AF70BD00F8389A /* MWZoomingScrollView.h in Headers */,
-				4C6F96F614AF710800F8389A /* MBProgressHUD.h in Headers */,
 				4C6F970A14AF711300F8389A /* SDImageCache.h in Headers */,
 				4C6F970C14AF711300F8389A /* SDImageCacheDelegate.h in Headers */,
 				4C6F970D14AF711300F8389A /* SDWebImageCompat.h in Headers */,
@@ -278,12 +285,28 @@
 			mainGroup = 4C6F96B914AF704100F8389A;
 			productRefGroup = 4C6F96C514AF704100F8389A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4A4F3EBE170AA85700693034 /* Products */;
+					ProjectRef = 4A4F3EBD170AA85700693034 /* MBProgressHUD.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4C6F96C314AF704100F8389A /* MWPhotoBrowser */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4A4F3EC2170AA85700693034 /* libMBProgressHUD.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMBProgressHUD.a;
+			remoteRef = 4A4F3EC1170AA85700693034 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C6F96C014AF704100F8389A /* Sources */ = {
@@ -296,7 +319,6 @@
 				4C6F96E914AF70BD00F8389A /* MWTapDetectingImageView.m in Sources */,
 				4C6F96EB14AF70BD00F8389A /* MWTapDetectingView.m in Sources */,
 				4C6F96ED14AF70BD00F8389A /* MWZoomingScrollView.m in Sources */,
-				4C6F96F714AF710800F8389A /* MBProgressHUD.m in Sources */,
 				4C6F970B14AF711300F8389A /* SDImageCache.m in Sources */,
 				4C6F970F14AF711300F8389A /* SDWebImageDecoder.m in Sources */,
 				4C6F971114AF711300F8389A /* SDWebImageDownloader.m in Sources */,
@@ -324,8 +346,10 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Distribution;
@@ -366,8 +390,10 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -385,8 +411,10 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
