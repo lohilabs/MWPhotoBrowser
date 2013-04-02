@@ -27,7 +27,7 @@
         UIBarButtonItem *item = [[[UIBarButtonItem alloc] initWithCustomView:_segmentedControl] autorelease];
         self.navigationItem.rightBarButtonItem = item;
         self.navigationItem.backBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleBordered target:nil action:nil] autorelease];
-        
+
     }
     return self;
 }
@@ -44,6 +44,16 @@
 
 #pragma mark -
 #pragma mark View lifecycle
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+//    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+//    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return YES;
@@ -164,6 +174,10 @@
 //    MWCaptionView *captionView = [[MWCaptionView alloc] initWithPhoto:photo];
 //    return [captionView autorelease];
 //}
+
+- (void)photoBrowser:(MWPhotoBrowser *)photoBrowser didDisplayPhotoAtIndex:(NSUInteger)index {
+    NSLog(@"Did start viewing photo at index %i", index);
+}
 
 @end
 

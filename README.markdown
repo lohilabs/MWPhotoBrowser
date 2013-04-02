@@ -32,6 +32,7 @@ See the code snippet below for an example of how to implement the photo browser.
     // Set options
     browser.wantsFullScreenLayout = YES; // Decide if you want the photo browser full screen, i.e. whether the status bar is affected (defaults to YES)
     browser.displayActionButton = YES; // Show action button to save, copy or email photos (defaults to NO)
+    browser.displayNavigationArrows = NO; // Whether or not to show navigation arrows (defaults to NO)
     [browser setInitialPageIndex:1]; // Example: allows second image to be presented first
     // Present
     [self.navigationController pushViewController:browser animated:YES];

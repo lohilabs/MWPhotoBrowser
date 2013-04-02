@@ -15,10 +15,12 @@
 // If you want to handle photos, caching, decompression
 // yourself then you can simply ensure your custom data model
 // conforms to MWPhotoProtocol
-@interface MWPhoto : NSObject <MWPhoto, SDWebImageManagerDelegate, SDWebImageDecoderDelegate>
+@interface MWPhoto : NSObject <MWPhoto>
 
 // Properties
-@property (nonatomic, retain) NSString *caption;
+@property (nonatomic, strong) NSString *caption;
+@property (nonatomic, readonly) NSURL *photoURL;
+@property (nonatomic, readonly) NSString *filePath;
 
 // Class
 + (MWPhoto *)photoWithImage:(UIImage *)image;
