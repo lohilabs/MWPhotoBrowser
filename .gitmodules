@@ -1,3 +1,6 @@
 [submodule "MWPhotoBrowser/Libraries/MBProgressHUD"]
 	path = MWPhotoBrowser/Libraries/MBProgressHUD
 	url = https://github.com/jdg/MBProgressHUD.git
+[submodule "MWPhotoBrowser/Libraries/SDWebImage"]
+	path = MWPhotoBrowser/Libraries/SDWebImage
+	url = https://github.com/rs/SDWebImage.git
