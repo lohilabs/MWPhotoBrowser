@@ -167,7 +167,7 @@
 	}
 	
 	// Set
-	self.maximumZoomScale = maxScale;
+	self.maximumZoomScale = maxScale*0.75f;
 	self.minimumZoomScale = minScale;
 	self.zoomScale = minScale;
 	
