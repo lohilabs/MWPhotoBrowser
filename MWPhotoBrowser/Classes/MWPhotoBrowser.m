@@ -8,6 +8,8 @@
 
 #import <QuartzCore/QuartzCore.h>
 #import "MBProgressHUD.h"
+// switch to the one below if you use the submodule
+//#import <MBProgressHUD/MBProgressHUD.h>
 #import "MWPhotoBrowser.h"
 #import "MWZoomingScrollView.h"
 #import <SDWebImage/SDImageCache.h>
