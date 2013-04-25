@@ -7,7 +7,7 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
-#import <MBProgressHUD/MBProgressHUD.h>
+#import "MBProgressHUD.h"
 #import "MWPhotoBrowser.h"
 #import "MWZoomingScrollView.h"
 #import <SDWebImage/SDImageCache.h>
