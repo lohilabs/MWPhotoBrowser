@@ -28,7 +28,6 @@
 @interface MWPhotoBrowser () {
     
 	// Data
-    id <MWPhotoBrowserDelegate> _delegate;
     NSUInteger _photoCount;
     NSMutableArray *_photos;
 	NSArray *_depreciatedPhotoData; // Depreciated
@@ -73,6 +72,7 @@
 @property (nonatomic, strong) UIImage *navigationBarBackgroundImageDefault, *navigationBarBackgroundImageLandscapePhone;
 @property (nonatomic, strong) UIActionSheet *actionsSheet;
 @property (nonatomic, strong) MBProgressHUD *progressHUD;
+@property (nonatomic, weak) id <MWPhotoBrowserDelegate> delegate;
 
 // Private Methods
 
